@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <style>
+        body {
+            position: relative;
+            min-height: 100vh;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: -80px;
+        }
+        input[type="submit"] {
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+        input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test</h1>
+    <form method="POST">
+        <h2>Soru 1: Python'da AI geliştirmek için yaygın olarak kullanılan kütüphane hangisidir?</h2>
+        <input type="radio" name="question1" value="a"> NumPy<br>
+        <input type="radio" name="question1" value="b"> TensorFlow<br>
+        <input type="radio" name="question1" value="c"> Matplotlib<br>
+        <input type="radio" name="question1" value="d"> Pandas<br>
+
+        <h2>Soru 2: Bilgisayarlı Görü'nün ana görevi nedir?</h2>
+        <input type="radio" name="question2" value="a"> Metin işleme<br>
+        <input type="radio" name="question2" value="b"> Veri analizi<br>
+        <input type="radio" name="question2" value="c"> Görüntü işleme<br>
+        <input type="radio" name="question2" value="d"> Web geliştirme<br>
+
+        <h2>Soru 3: NLP'nin açılımı nedir?</h2>
+        <input type="radio" name="question3" value="a"> Natural Language Processing<br>
+        <input type="radio" name="question3" value="b"> Neural Language Processing<br>
+        <input type="radio" name="question3" value="c"> Natural Language Programming<br>
+        <input type="radio" name="question3" value="d"> Neural Language Programming<br>
+
+        <h2>Soru 4: Pekiştirmeli öğrenmede, en iyi eylemi bulmak için hangi yöntem kullanılır?</h2>
+        <input type="radio" name="question4" value="a"> Sınıflandırma algoritmaları<br>
+        <input type="radio" name="question4" value="b"> Kümeleme algoritmaları<br>
+        <input type="radio" name="question4" value="c"> Ödül-ceza sistemi<br>
+        <input type="radio" name="question4" value="d"> Doğrusal regresyon<br>              
+
+        <h2>Soru 5: Python'da görüntü işleme için hangi kütüphane kullanılır?</h2>
+        <input type="radio" name="question5" value="a"> Pygame<br>
+        <input type="radio" name="question5" value="b"> Serial<br>
+        <input type="radio" name="question5" value="c"> Opencv<br>
+        <input type="radio" name="question5" value="d"> Rospy<br>
+
+        <h2>Soru 6: scikit-learn kütüphanesi yaygın olarak hangi alanda kullanılır?</h2>
+        <input type="radio" name="question6" value="a"> Makine öğrenimi algoritmaları<br>
+        <input type="radio" name="question6" value="b"> Web geliştirme araçları<br>
+        <input type="radio" name="question6" value="c"> Ağ protokolleri<br>
+        <input type="radio" name="question6" value="d"> İşletim sistemleri<br>
+
+        <h2>Soru 7: Doğal dil işleme için aşağıdaki dillerden hangisi en iyisidir?</h2>
+        <input type="radio" name="question7" value="a"> Java<br>
+        <input type="radio" name="question7" value="b"> C#<br>
+        <input type="radio" name="question7" value="c"> JavaScript<br>
+        <input type="radio" name="question7" value="d"> Python<br>
+
+        <h2>Soru 8: Derin öğrenme için hangi Python kütüphanesi kullanılır?</h2>
+        <input type="radio" name="question8" value="a"> Pandas<br>
+        <input type="radio" name="question8" value="b"> Keras<br>
+        <input type="radio" name="question8" value="c"> Seaborn<br>
+        <input type="radio" name="question8" value="d"> BeautifulSoup<br>
+
+        <h2>Soru 9: AI'da CNN kısaltması ne anlama gelir?</h2>
+        <input type="radio" name="question9" value="a"> Convolutional Neural Network<br>
+        <input type="radio" name="question9" value="b"> Circular Neural Network<br>
+        <input type="radio" name="question9" value="c"> Computational Neural Network<br>
+        <input type="radio" name="question9" value="d"> Contextual Neural Network<br>
+
+        <h2>Soru 10: Python'da veri analizi için hangi kütüphaneler yaygın olarak kullanılır?</h2>
+        <input type="radio" name="question10" value="a"> NumPy<br>
+        <input type="radio" name="question10" value="b"> Matplotlib<br>
+        <input type="radio" name="question10" value="c"> Pandas<br>
+        <input type="radio" name="question10" value="d"> Hepsi<br>
+
+        <br>
+
+        <input type="submit" value="Cevapları Gönder">
+
+        <div style="position: absolute; top: 10px; right: 10px; font-size: 24px; font-weight: bold;">
+            <p>En İyi Puan: {{ session.best_score if session.best_score else 0 }}</p>
+        </div>
+        
+    </form>
+    <footer>
+        Süleyman Sefa Gürer
+    </footer>
+</body>
+</html>
